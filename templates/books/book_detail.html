@@ -1,0 +1,14 @@
+{% extends '_base.html' %}
+{% load static %}
+
+{% block title %}Books List{% endblock title %}
+
+{% block content %}
+    <h1>Book Details</h1>
+        <div>
+            <h3><a href="">{{ book.title }}</a></h3>
+            <p>Author: {{book.author}}</p>
+            <p>Price: {{book.price}}</p>
+        </div>
+    
+{% endblock content %}
